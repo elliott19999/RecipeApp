@@ -11,6 +11,9 @@
 		01C3F03C2C638F5B00FB3617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F03B2C638F5B00FB3617 /* ContentView.swift */; };
 		01C3F03E2C638F6000FB3617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C3F03D2C638F6000FB3617 /* Assets.xcassets */; };
 		01C3F0412C638F6000FB3617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C3F0402C638F6000FB3617 /* Preview Assets.xcassets */; };
+		01C3F0482C6392D000FB3617 /* RoudedColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F0472C6392D000FB3617 /* RoudedColorButton.swift */; };
+		01C3F04A2C6395A000FB3617 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F0492C6395A000FB3617 /* LoginView.swift */; };
+		01C3F04C2C63A28F00FB3617 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F04B2C63A28F00FB3617 /* TextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		01C3F03B2C638F5B00FB3617 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01C3F03D2C638F6000FB3617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C3F0402C638F6000FB3617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01C3F0472C6392D000FB3617 /* RoudedColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoudedColorButton.swift; sourceTree = "<group>"; };
+		01C3F0492C6395A000FB3617 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		01C3F04B2C63A28F00FB3617 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				01C3F0392C638F5B00FB3617 /* RecipeAppApp.swift */,
+				01C3F04B2C63A28F00FB3617 /* TextFieldModifier.swift */,
+				01C3F0492C6395A000FB3617 /* LoginView.swift */,
 				01C3F03B2C638F5B00FB3617 /* ContentView.swift */,
+				01C3F0472C6392D000FB3617 /* RoudedColorButton.swift */,
 				01C3F03D2C638F6000FB3617 /* Assets.xcassets */,
 				01C3F03F2C638F6000FB3617 /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C3F03C2C638F5B00FB3617 /* ContentView.swift in Sources */,
+				01C3F04C2C63A28F00FB3617 /* TextFieldModifier.swift in Sources */,
 				01C3F03A2C638F5B00FB3617 /* RecipeAppApp.swift in Sources */,
+				01C3F04A2C6395A000FB3617 /* LoginView.swift in Sources */,
+				01C3F0482C6392D000FB3617 /* RoudedColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
