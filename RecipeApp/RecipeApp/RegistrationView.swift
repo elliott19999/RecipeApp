@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var fullname = ""
-    @State private var username = ""
+    @StateObject var viewModel = RegistrationViewModel()
+
     
     @Environment(\.dismiss) private var dismiss
     
     var isPasswordValidLength: Bool {
-        return password.count >= 6
+        return viewModel.password.count >= 6
     }
     
     var isPasswordWithNumber: Bool {
-        return password.contains { $0.isNumber }
+        return viewModel.password.contains { $0.isNumber }
     }
     var isPasswordWithUppercase: Bool {
-        return password.contains { $0.isUppercase }
+        return viewModel.password.contains { $0.isUppercase }
     }
     var isPasswordWithLowercase: Bool {
-        return password.contains { $0.isLowercase }
+        return viewModel.password.contains { $0.isLowercase }
     }
     @State private var isShowungPassword = false
     
@@ -51,7 +49,7 @@ struct RegistrationView: View {
                     Image(systemName: "envelope")
                         .fontWeight(.semibold)
                     
-                    TextField("Email or phone number", text: $email)
+                    TextField("Email or phone number", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .cornerRadius(12)
@@ -63,12 +61,12 @@ struct RegistrationView: View {
                     Image(systemName: "envelope")
                         .fontWeight(.semibold)
                     if isShowungPassword {
-                        TextField("Password", text: $password)
+                        TextField("Password", text: $viewModel.password)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
                     } else {
-                        SecureField("Password", text: $password)
+                        SecureField("Password", text:  $viewModel.password)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
@@ -121,7 +119,9 @@ struct RegistrationView: View {
                 //login buttuns
             VStack(spacing: 16.0) {
                     Button(action: {
-                        
+                        Task {
+                            try await viewModel.createUser()
+                        }
                     }, label: {
                         Text("Sign Up")
                             .modifier(RoudedColorButton(color: Color.green))
