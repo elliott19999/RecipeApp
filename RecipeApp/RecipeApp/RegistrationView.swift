@@ -26,7 +26,7 @@ struct RegistrationView: View {
     var isPasswordWithLowercase: Bool {
         return viewModel.password.contains { $0.isLowercase }
     }
-    @State private var isShowungPassword = false
+    @State private var isShowingPassword = false
     
     var isPasswordValid : Bool {
         return isPasswordValidLength &&
@@ -60,7 +60,7 @@ struct RegistrationView: View {
                 HStack {
                     Image(systemName: "envelope")
                         .fontWeight(.semibold)
-                    if isShowungPassword {
+                    if isShowingPassword {
                         TextField("Password", text: $viewModel.password)
                             .font(.subheadline)
                             .padding(12)
@@ -73,9 +73,9 @@ struct RegistrationView: View {
                     }
                
                     Button(action: {
-                        isShowungPassword.toggle()
+                        isShowingPassword.toggle()
                     }, label: {
-                        Image(systemName: isShowungPassword ? "eye" : "eye.slash")
+                        Image(systemName: isShowingPassword ? "eye" : "eye.slash")
                             .foregroundStyle(.gray)
                         
                     })

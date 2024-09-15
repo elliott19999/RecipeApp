@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014D5C882C8855AB003061E9 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D5C872C8855AB003061E9 /* RecipeTabView.swift */; };
 		01C3F03A2C638F5B00FB3617 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F0392C638F5B00FB3617 /* RecipeAppApp.swift */; };
 		01C3F03C2C638F5B00FB3617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F03B2C638F5B00FB3617 /* ContentView.swift */; };
 		01C3F03E2C638F6000FB3617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C3F03D2C638F6000FB3617 /* Assets.xcassets */; };
@@ -25,9 +26,11 @@
 		01C3F06B2C6918C800FB3617 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 01C3F06A2C6918C800FB3617 /* FirebaseAuth */; };
 		01C3F06D2C691AB500FB3617 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */; };
 		01C3F06F2C7A05E800FB3617 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01C3F06E2C7A05E800FB3617 /* FirebaseFirestore */; };
+		01F5CE942C971B9A00A1D695 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014D5C872C8855AB003061E9 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		01C3F0362C638F5B00FB3617 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C3F0392C638F5B00FB3617 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		01C3F03B2C638F5B00FB3617 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		01C3F04F2C69063600FB3617 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01C3F0672C69166800FB3617 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		01C3F0382C638F5B00FB3617 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				01F5CE922C971B7C00A1D695 /* Root */,
 				01C3F0392C638F5B00FB3617 /* RecipeAppApp.swift */,
 				01C3F0672C69166800FB3617 /* AuthService.swift */,
 				01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */,
@@ -91,6 +96,7 @@
 				01C3F03D2C638F6000FB3617 /* Assets.xcassets */,
 				01C3F04F2C69063600FB3617 /* GoogleService-Info.plist */,
 				01C3F03F2C638F6000FB3617 /* Preview Content */,
+				014D5C872C8855AB003061E9 /* RecipeTabView.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -108,6 +114,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01F5CE922C971B7C00A1D695 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +211,9 @@
 				01C3F04C2C63A28F00FB3617 /* TextFieldModifier.swift in Sources */,
 				01C3F03A2C638F5B00FB3617 /* RecipeAppApp.swift in Sources */,
 				01C3F04E2C63BFF700FB3617 /* RegistrationView.swift in Sources */,
+				01F5CE942C971B9A00A1D695 /* ContentViewModel.swift in Sources */,
 				01C3F04A2C6395A000FB3617 /* LoginView.swift in Sources */,
+				014D5C882C8855AB003061E9 /* RecipeTabView.swift in Sources */,
 				01C3F06D2C691AB500FB3617 /* RegistrationViewModel.swift in Sources */,
 				01C3F0482C6392D000FB3617 /* RoudedColorButton.swift in Sources */,
 				01C3F0682C69166800FB3617 /* AuthService.swift in Sources */,
