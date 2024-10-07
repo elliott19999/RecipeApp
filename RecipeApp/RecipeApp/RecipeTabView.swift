@@ -47,7 +47,7 @@ struct RecipeTabView: View {
                     selectedTab = 3
                 })
                 .tag(3)
-            Text("Home View!")
+            ProfileView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "person.fill" : "person")
                      

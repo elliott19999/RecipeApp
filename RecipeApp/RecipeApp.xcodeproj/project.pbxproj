@@ -27,6 +27,8 @@
 		01C3F06D2C691AB500FB3617 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */; };
 		01C3F06F2C7A05E800FB3617 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01C3F06E2C7A05E800FB3617 /* FirebaseFirestore */; };
 		01F5CE942C971B9A00A1D695 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */; };
+		01F5CE972C97370800A1D695 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5CE962C97370800A1D695 /* ProfileView.swift */; };
+		01F5CE9C2C9850A800A1D695 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5CE9B2C9850A800A1D695 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		01C3F0672C69166800FB3617 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		01F5CE962C97370800A1D695 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		01F5CE9B2C9850A800A1D695 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,19 +88,17 @@
 		01C3F0382C638F5B00FB3617 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				01F5CE952C97367900A1D695 /* Auth */,
 				01F5CE922C971B7C00A1D695 /* Root */,
 				01C3F0392C638F5B00FB3617 /* RecipeAppApp.swift */,
-				01C3F0672C69166800FB3617 /* AuthService.swift */,
-				01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */,
-				01C3F04D2C63BFF700FB3617 /* RegistrationView.swift */,
 				01C3F04B2C63A28F00FB3617 /* TextFieldModifier.swift */,
-				01C3F0492C6395A000FB3617 /* LoginView.swift */,
 				01C3F03B2C638F5B00FB3617 /* ContentView.swift */,
 				01C3F0472C6392D000FB3617 /* RoudedColorButton.swift */,
 				01C3F03D2C638F6000FB3617 /* Assets.xcassets */,
 				01C3F04F2C69063600FB3617 /* GoogleService-Info.plist */,
 				01C3F03F2C638F6000FB3617 /* Preview Content */,
 				014D5C872C8855AB003061E9 /* RecipeTabView.swift */,
+				01F5CE962C97370800A1D695 /* ProfileView.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -122,6 +124,34 @@
 				01F5CE932C971B9A00A1D695 /* ContentViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		01F5CE952C97367900A1D695 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				01F5CE9A2C98507200A1D695 /* View */,
+				01F5CE992C98503600A1D695 /* ViewModel */,
+				01C3F0672C69166800FB3617 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		01F5CE992C98503600A1D695 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01C3F06C2C691AB500FB3617 /* RegistrationViewModel.swift */,
+				01F5CE9B2C9850A800A1D695 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01F5CE9A2C98507200A1D695 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01C3F04D2C63BFF700FB3617 /* RegistrationView.swift */,
+				01C3F0492C6395A000FB3617 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +245,9 @@
 				01C3F04A2C6395A000FB3617 /* LoginView.swift in Sources */,
 				014D5C882C8855AB003061E9 /* RecipeTabView.swift in Sources */,
 				01C3F06D2C691AB500FB3617 /* RegistrationViewModel.swift in Sources */,
+				01F5CE9C2C9850A800A1D695 /* LoginViewModel.swift in Sources */,
 				01C3F0482C6392D000FB3617 /* RoudedColorButton.swift in Sources */,
+				01F5CE972C97370800A1D695 /* ProfileView.swift in Sources */,
 				01C3F0682C69166800FB3617 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
